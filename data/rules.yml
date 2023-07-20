@@ -12,12 +12,13 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: show restaurants
+- rule: provide info
   steps:
-  - intent: restaurants
-  - action: action_show_restaurants
+  - intent: info
+  - action: action_get_info
 
-- rule: show detail
+- rule: provide data
   steps:
-  - intent: detail
-  - action: action_restaurants_detail
+  - intent: data
+  - action: action_get_data
+

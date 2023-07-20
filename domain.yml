@@ -1,12 +1,5 @@
 version: "3.1"
 
-slots:
-  results:
-    type: text
-    mappings:
-    - type: custom
-      action: action_show_restaurants
-
 intents:
   - greet
   - goodbye
@@ -15,8 +8,8 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - restaurants
-  - detail
+  - info
+  - data
 
 responses:
   utter_greet:
@@ -39,8 +32,8 @@ responses:
   - text: "I am a bot, powered by Rasa."
 
 actions:
-  - action_show_restaurants
-  - action_restaurants_detail
+  - action_get_info
+  - action_get_data
 
 session_config:
   session_expiration_time: 60

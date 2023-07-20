@@ -1,2 +1,3 @@
 .rasa
 .env
+credentials.py

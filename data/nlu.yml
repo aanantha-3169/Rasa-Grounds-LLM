@@ -17,18 +17,21 @@ nlu:
     - goodevening
     - good afternoon
 
-- intent: restaurants
+- intent: info
   examples: |
-    - show me places to eat
-    - I'm looking for a great restaurant
-    - show me food
+    - What factors should I consider when getting a credit card?
+    - What costs are associated with a credit card?
+    - What is the name of the banks that offers a card with an interest rate of 0.15??
+    - What are the benefits of getting a credit card?
+    - What is the interest rate of Bank A's credit card?
+    - What is the interest rate of Bank B's credit card?
+    - What is the difference in interest rate of Bank A and B's credit card?
+   
+- intent: data
+  examples: |
+     - How many banks offer a credit card?
+     - How many banks offer a credit card with interest rate below 0.15?
 
-- intent: detail
-  examples: |
-    - which of those have wifi?
-    - what's the highest rated?
-    - does the chinese place do takeaway?
-    - does the mexican one have wifi
 
 - intent: goodbye
   examples: |
