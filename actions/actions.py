@@ -102,11 +102,11 @@ class ActionTextResponse(Action):
                                 #print(variable)
                                 result_dict[variable] = str(ans.get(variable).as_attribute().get_value())
                             result_list.append(result_dict)
-                            print(result_list)
+                            #print(result_list)
              
 
             answer = query_trans.get_trans(latest_message_text,result_list)
-            print(answer) 
+            #print(answer) 
             # Return the translated query output
             dispatcher.utter_message(text= answer)
             return []
@@ -145,7 +145,7 @@ class ActionNumericResponse(Action):
              
 
             answer = query_trans.get_trans(latest_message_text,numer)
-            print(answer) 
+            # print(answer) 
             # Return the translated query output
             dispatcher.utter_message(text= answer)
             return []
