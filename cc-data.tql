@@ -1,0 +1,28 @@
+# Insert data for Card A
+insert $a isa credit-card,
+    has interest-rate 0.15, # 15%
+    has minimum-payment 0.05, # 5%
+    has late-fee 0.01; # 1%
+
+$b isa bank,
+    has bank-name "Bank A";
+
+(issued-card: $a, card-issuer: $b) isa issuance;
+
+# Insert data for Card B
+insert $c isa credit-card,
+    has interest-rate 0.12, # 12%
+    has minimum-payment 0.10, # 10%
+    has late-fee 0.05; # 5%
+
+$d isa bank,
+    has bank-name "Bank B";
+
+(issued-card: $c, card-issuer: $d) isa issuance;
+
+# Insert data for Credit Card pros
+insert $p1 isa credit-card-pros, has pro "Speed and Efficiency: A credit card is extremely easy to carry around.Paying with a credit card is quick and seamless, often requiring nothing more than a swipe or tap on the payment terminal. ";
+insert $p2 isa credit-card-pros, has pro "Protection: Card providers offer purchase protection plans that offer  coverage against theft or accidental damage. ";
+
+
+
